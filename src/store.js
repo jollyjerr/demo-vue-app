@@ -12,7 +12,7 @@ export default new Vuex.Store({
       state.dogs = dogs
     }
   },
-  actions: {
+  actions: { //async
     fetchDogs({commit}){
       Promise.resolve() //fake fetch
       .then(() => {
