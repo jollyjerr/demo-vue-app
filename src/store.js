@@ -13,7 +13,7 @@ export default new Vuex.Store({
     },
     upvoteDog(state, id){
       const dog = state.dogs.find(dog => dog.id == id)
-      dog.likes += 1
+      dog.likes++
     }
   },
   actions: { //async

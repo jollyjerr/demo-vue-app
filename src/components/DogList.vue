@@ -17,7 +17,7 @@ export default {
     },
     methods: {
         upvoteDog(id){
-            this.$emit(upvoteDog, id)
+            this.$emit("upvoteDog", id)
         }
     }
 }
