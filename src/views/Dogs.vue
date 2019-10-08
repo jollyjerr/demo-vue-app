@@ -14,21 +14,9 @@
 
 <script>
 export default {
-    data() {
-        return {
-            dogs: [{
-                id: 1,
-                name: "Bower",
-                imageUrl: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/17/39/1506709524-cola-0247.jpg?crop=1.00xw:0.750xh;0,0.226xh&resize=480:*'
-            }, {
-                id: 2,
-                name: "Waggy",
-                imageUrl: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/17/39/1506709524-cola-0247.jpg?crop=1.00xw:0.750xh;0,0.226xh&resize=480:*'
-            }, {
-                id: 3,
-                name: "Percy",
-                imageUrl: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/17/39/1506709524-cola-0247.jpg?crop=1.00xw:0.750xh;0,0.226xh&resize=480:*'
-            }]
+    computed: {
+        dogs() {
+            return this.$store.state.dogs
         }
     }
 }
