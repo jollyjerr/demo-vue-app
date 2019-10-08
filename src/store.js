@@ -10,6 +10,9 @@ export default new Vuex.Store({
   mutations: { //only these can change the state - have to be sync
     setDogs(state, dogs) {
       state.dogs = dogs
+    },
+    upvoteDog(state, id){
+      //uhhhh
     }
   },
   actions: { //async
@@ -30,7 +33,9 @@ export default new Vuex.Store({
           imageUrl: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/17/39/1506709524-cola-0247.jpg?crop=1.00xw:0.750xh;0,0.226xh&resize=480:*'
         }])
       })
-    }
+    },
+    upvoteDog(id){
 
+    }
   }
 })

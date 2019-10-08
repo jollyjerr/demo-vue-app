@@ -14,6 +14,11 @@ export default {
     },
     props: {
         dogs: Array,
+    },
+    methods: {
+        upvoteDog(id){
+            this.$emit(upvoteDog, id)
+        }
     }
 }
 </script>

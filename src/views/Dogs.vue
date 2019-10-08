@@ -1,7 +1,7 @@
 <template>
     <div class="dogs">
         <h2>Dogs</h2>
-        <DogList :dogs="dogs" />
+        <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
     </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
     computed: {
         dogs() {
             return this.$store.state.dogs
+        }
+    },
+    methods: {
+        upvoteDog(id){
+            this.$store.distpatch(upvoteDog(id))
         }
     }
 }
