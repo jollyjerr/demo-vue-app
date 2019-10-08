@@ -1,6 +1,7 @@
 <template>
     <div class="dogs">
         <h2>Dogs</h2>
+        <!-- <router-link :to="{nameL 'hi'}"> This would link to a hi component </router-link> -->
         <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
     </div>
 </template>
