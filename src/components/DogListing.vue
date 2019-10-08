@@ -2,6 +2,7 @@
     <div class="dog-listing">
         <img :src="dog.imageUrl" alt="dog"> <!-- you can do any js in a bound attribute with : -->
         <h3>{{dog.name}}</h3>
+        <p>{{dog.likes}}</p>
     </div>
 </template>
 

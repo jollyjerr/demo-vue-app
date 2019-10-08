@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         upvoteDog(id){
-            this.$store.distpatch(upvoteDog(id))
+            this.$store.distpatch("upvoteDog", id)
         }
     }
 }
