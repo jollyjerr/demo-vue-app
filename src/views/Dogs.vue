@@ -14,6 +14,9 @@
 
 <script>
 export default {
+    mounted() {
+        this.$store.dispatch("fetchDogs")
+    },
     computed: {
         dogs() {
             return this.$store.state.dogs
