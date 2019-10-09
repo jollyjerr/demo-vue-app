@@ -8,7 +8,15 @@
 <script>
 export default {
     mounted() {
-        this.$store.dispatch("fetchDog", this.$route.params.id)
+        this.$store.dispatch("fetchDog", this.dogId)
+    },
+    computed: {
+        dogId() {
+            return this.$route.params.id
+        },
+        dog(){
+            return this.$store.getters.dog(this.dogId)
+        }
     },
 }
 </script>
