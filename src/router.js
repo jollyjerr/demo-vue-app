@@ -14,5 +14,12 @@ export default new Router({
     path: "/",
     name: "index",
     component: Dogs,
+    children: [
+      {
+        name: "dog",
+        path: "/:id",
+        component: Dog
+      }
+    ]
   }]
 })

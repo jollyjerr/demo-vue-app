@@ -1,7 +1,7 @@
 <template>
     <div class="dog-listing">
         <img :src="dog.imageUrl" alt="dog"> <!-- you can do any js in a bound attribute with : -->
-        <h3>{{dog.name}}</h3>
+        <h3> <router-link :to="{name: 'dog', params: {id: dog.id}}"> {{dog.name}} </router-link > </h3>
         <p>Votes: {{dog.likes}}  </p>
     </div>
 </template>
