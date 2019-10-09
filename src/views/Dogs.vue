@@ -2,6 +2,7 @@
     <div class="dogs">
         <h2>Dogs</h2>
         <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
+        <router-view />
     </div>
 </template>
 
