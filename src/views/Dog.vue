@@ -8,7 +8,7 @@
 <script>
 export default {
     mounted() {
-        this.$store.dispatch("fetchDog", this.dogId)
+        this.$store.dispatch("fetchDogs")
     },
     computed: {
         dogId() {
