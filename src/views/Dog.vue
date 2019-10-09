@@ -1,5 +1,8 @@
 <template>
+    <div class="dog" >
     <h2>Dog</h2>
+        
+    </div>
 </template>
 
 <script>

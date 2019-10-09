@@ -1,8 +1,10 @@
 <template>
     <div class="dogs">
         <h2>Dogs</h2>
+        <div class="master-detail" >
         <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
         <router-view />
+        </div>
     </div>
 </template>
 
@@ -31,6 +33,13 @@ export default {
 
 <style lang="scss">
     .dogs {
-        
+        .master-detail{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 2rem;
+            .dog {
+                padding: 2rem;
+            }
+        }
     }
 </style>
