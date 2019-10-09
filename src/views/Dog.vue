@@ -1,8 +1,9 @@
 <template>
     <div class="dog" >
     <h2>{{dog.name}}</h2>
-    <p>{{dog.votes}}</p>
-    <button @click.native="upoteDog" >Vote!</button>
+    <img :src="dog.imageUrl" alt="dog">
+    <p>Votes: {{dog.likes}}</p>
+    <button @click="upvoteDog" >Vote!</button>
     </div>
 </template>
 
@@ -16,12 +17,12 @@ export default {
             return this.$route.params.id
         },
         dog(){
-            return this.$store.getters.dog(this.dogId)
+            return this.$store.getters.dog(this.dogId) 
         }
     },
     methods: {
         upvoteDog(){
-            this.$emit("upvoteDog", this.dogId)
+            this.$store.dispatch("upvoteDog", this.dogId)
         }
     }
 }

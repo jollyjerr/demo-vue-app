@@ -2,8 +2,8 @@
     <div class="dogs">
         <h2>Dogs</h2>
         <div class="master-detail" >
-        <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
-        <router-view /> <!-- a hole punched in the view -->
+            <DogList :dogs="dogs" @upvoteDog="upvoteDog" />
+            <router-view /> <!-- a hole punched in the view -->
         </div>
     </div>
 </template>
