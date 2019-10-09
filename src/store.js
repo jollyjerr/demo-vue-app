@@ -9,7 +9,7 @@ export default new Vuex.Store({
   },
   getters: {
     dog: state => id => {
-      state.dogs.find(dog => dog.id == id)
+     return state.dogs.find(dog => dog.id == id)
     }
   },
   mutations: { //only these can change the state - have to be sync

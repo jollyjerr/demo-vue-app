@@ -1,7 +1,8 @@
 <template>
     <div class="dog" >
-    <h2>Dog</h2>
-        
+    <h2>{{dog.name}}</h2>
+    <p>{{dog.votes}}</p>
+    <button>Vote!</button>
     </div>
 </template>
 
