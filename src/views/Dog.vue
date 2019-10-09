@@ -7,7 +7,9 @@
 
 <script>
 export default {
-    
+    mounted() {
+        this.$store.dispatch("fetchDog", this.$route.params.id)
+    },
 }
 </script>
 
