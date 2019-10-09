@@ -2,7 +2,7 @@
     <div class="dog" >
     <h2>{{dog.name}}</h2>
     <p>{{dog.votes}}</p>
-    <button>Vote!</button>
+    <button @click.native="upoteDog" >Vote!</button>
     </div>
 </template>
 
@@ -19,6 +19,11 @@ export default {
             return this.$store.getters.dog(this.dogId)
         }
     },
+    methods: {
+        upvoteDog(){
+            this.$emit("upvoteDog", this.dogId)
+        }
+    }
 }
 </script>
 
