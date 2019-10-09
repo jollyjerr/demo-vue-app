@@ -29,5 +29,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+    .dog {
+        img {
+            width: 10rem;
+        }
+    }
 </style>
